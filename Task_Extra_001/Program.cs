@@ -40,7 +40,7 @@ namespace Task_Extra_001
 
             while (!isCorrect)
             {
-                Console.WriteLine("Type a first number...");
+                Console.WriteLine("Type a Second number...");
                 string userInput = Console.ReadLine();
 
                 bool isConvertCorrect = int.TryParse(userInput, out secondValue);
@@ -56,7 +56,7 @@ namespace Task_Extra_001
 
             while (!isCorrect)
             {
-                Console.WriteLine("Type a first number...");
+                Console.WriteLine("Type a Third number...");
                 string userInput = Console.ReadLine();
 
                 bool isConvertCorrect = int.TryParse(userInput, out thirdValue);
