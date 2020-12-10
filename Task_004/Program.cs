@@ -10,11 +10,11 @@ namespace Task_004
             int[] arr = new int[] { 2, 5, 3, 6, 9};
             SetUserValue(ref userValue);
             Console.WriteLine(
-                isValuePositive(userValue) == true ? "Число Положительно" :
-                isValueNEgative(userValue) == true ? "Число Негативно" :
-                "Число ноль");
+                isValuePositive(userValue) == true ? "Value is Positive" :
+                isValueNEgative(userValue) == true ? "Value is Negative" :
+                "Value is zero");
 
-            Console.WriteLine(isValueSimple(userValue) == true ? "Число Простое\n" : "Число составное\n");
+            Console.WriteLine(isValueSimple(userValue) == true ? "Value is Simple\n" : "Value is Composite\n");
             CheckDivision(userValue, arr);
 
 
@@ -66,9 +66,9 @@ namespace Task_004
                 if (value % item == 0) 
                 {
                     
-                    Console.WriteLine($"Число {value} делится на {item} без остатка");
+                    Console.WriteLine($"Value {value} devides by {item} without residue");
                 }
-                else Console.WriteLine($"Число {value} делится на {item} c остатком {value%item}");
+                else Console.WriteLine($"Число {value} делится на {item} with rest {value%item}");
             }
         }
     }
